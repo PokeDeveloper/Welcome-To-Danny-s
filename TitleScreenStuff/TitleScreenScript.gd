@@ -68,3 +68,7 @@ func _on_TouchScreenButton2_pressed():
 
 func _on_TouchScreenButton3_pressed():
 	get_tree().quit()
+
+
+func _on_WarningTimer_timeout():
+	self.get_node("warning").visible = false
